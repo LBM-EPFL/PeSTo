@@ -1,0 +1,26 @@
+#!/bin/sh -l
+#SBATCH --nodes=1
+#SBATCH --time=12:00:00
+#SBATCH --qos=gpu
+#SBATCH --gres=gpu:1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=8
+#SBATCH --mem 64GB
+#SBATCH --partition=gpu
+
+# load module
+#module load daint-gpu
+
+# copy data to local drive
+rsync -av --info=progress2 /scratch/izar/lfkrapp/atonn/data/all_biounits.tar.lz4 /tmp/$SLURM_JOB_ID/
+tar -I lz4 -xvf /tmp/$SLURM_JOB_ID/all_biounits.tar.lz4 -C /tmp/$SLURM_JOB_ID/
+
+# activate anaconda
+source $HOME/miniconda3/bin/activate
+conda activate pstnn
+
+# launch script
+srun python build_dataset.py $SLURM_JOB_ID
+
+# copy output
+rsync -av --info=progress2 /tmp/$SLURM_JOB_ID/*.h5 /scratch/izar/lfkrapp/atonn/data/datasets/
