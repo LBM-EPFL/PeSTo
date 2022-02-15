@@ -1,0 +1,22 @@
+#!/bin/sh -l
+#SBATCH --nodes=1
+#SBATCH --time=24:00:00
+#SBATCH --qos=gpu
+#SBATCH --gres=gpu:1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=8
+#SBATCH --mem 64GB
+#SBATCH --partition=gpu
+
+# load module
+#module load daint-gpu
+
+# copy data to local drive
+#rsync -av --info=progress2 /scratch/izar/lfkrapp/atonn/data/datasets/contacts_rr5A_64nn_8192.h5 /tmp/$SLURM_JOB_ID/
+
+# activate anaconda
+source $HOME/miniconda3/bin/activate
+conda activate pesto
+
+# launch script
+srun python main.py $SLURM_JOB_ID
