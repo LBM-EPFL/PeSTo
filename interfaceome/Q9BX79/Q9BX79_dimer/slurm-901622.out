@@ -1,0 +1,33 @@
+/usr/share/lmod/lmod/init/sh: line 20: /usr/share/lmod/lmod/libexec//clearMT_cmd: No such file or directory
+2022-03-24 14:02:29.907379: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcusolver.so.11'; dlerror: libcusolver.so.11: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /ssoft/spack/arvine/v1/opt/spack/linux-rhel7-cascadelake/gcc-9.3.0/cuda-11.0.2-w4gi7m3vx64dpvuur2c6als7534h3z5v/lib64:/ssoft/spack/arvine/v1/opt/spack/linux-rhel7-haswell/gcc-4.8.5/gcc-9.3.0-prviuv7vpdzyyhhai7sqrxlgyedsjosg/lib64:/ssoft/spack/arvine/v1/opt/spack/linux-rhel7-haswell/gcc-4.8.5/gcc-9.3.0-prviuv7vpdzyyhhai7sqrxlgyedsjosg/lib
+2022-03-24 14:02:30.023981: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudnn.so.8'; dlerror: libcudnn.so.8: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /ssoft/spack/arvine/v1/opt/spack/linux-rhel7-cascadelake/gcc-9.3.0/cuda-11.0.2-w4gi7m3vx64dpvuur2c6als7534h3z5v/lib64:/ssoft/spack/arvine/v1/opt/spack/linux-rhel7-haswell/gcc-4.8.5/gcc-9.3.0-prviuv7vpdzyyhhai7sqrxlgyedsjosg/lib64:/ssoft/spack/arvine/v1/opt/spack/linux-rhel7-haswell/gcc-4.8.5/gcc-9.3.0-prviuv7vpdzyyhhai7sqrxlgyedsjosg/lib
+2022-03-24 14:02:30.024048: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1835] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2022-03-24 14:03:03.112791: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+homooligomer: '2'
+total_length: '1334'
+working_directory: 'prediction_test_f24ed'
+running mmseqs2
+  0%|          | 0/150 [elapsed: 00:00 remaining: ?]
+673 Sequences Found in Total
+  0%|          | 0/5 [elapsed: 00:00 remaining: ?]
+model_1_ptm_seed_0 recycles:3 tol:2.95 pLDDT:68.09 pTMscore:0.69
+model_2_ptm_seed_0 recycles:3 tol:5.86 pLDDT:65.40 pTMscore:0.68
+model_3_ptm_seed_0 recycles:3 tol:5.11 pLDDT:72.23 pTMscore:0.75
+model_4_ptm_seed_0 recycles:3 tol:1.47 pLDDT:68.44 pTMscore:0.71
+model_5_ptm_seed_0 recycles:3 tol:5.11 pLDDT:69.14 pTMscore:0.73
+model rank based on pLDDT
+rank_1_model_3_ptm_seed_0 pLDDT:72.23
+rank_2_model_5_ptm_seed_0 pLDDT:69.14
+rank_3_model_4_ptm_seed_0 pLDDT:68.44
+rank_4_model_1_ptm_seed_0 pLDDT:68.09
+rank_5_model_2_ptm_seed_0 pLDDT:65.40
+predicted alignment error
+predicted contacts
+predicted distogram
+predicted LDDT
+Traceback (most recent call last):
+  File "/work/updalpe/abriata/af2/lucienspaper-Q9BX79/AlphaFold2_advanced.py", line 1008, in <module>
+    get_ipython().system('zip -FSr {output_dir}.zip {output_dir}')
+NameError: name 'get_ipython' is not defined

@@ -1,0 +1,38 @@
+/usr/share/lmod/lmod/init/sh: line 20: /usr/share/lmod/lmod/libexec//clearMT_cmd: No such file or directory
+2021-08-27 11:24:28.083168: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcusolver.so.11'; dlerror: libcusolver.so.11: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /ssoft/spack/arvine/v1/opt/spack/linux-rhel7-cascadelake/gcc-9.3.0/cuda-11.0.2-w4gi7m3vx64dpvuur2c6als7534h3z5v/lib64:/ssoft/spack/arvine/v1/opt/spack/linux-rhel7-haswell/gcc-4.8.5/gcc-9.3.0-prviuv7vpdzyyhhai7sqrxlgyedsjosg/lib64:/ssoft/spack/arvine/v1/opt/spack/linux-rhel7-haswell/gcc-4.8.5/gcc-9.3.0-prviuv7vpdzyyhhai7sqrxlgyedsjosg/lib
+2021-08-27 11:24:28.173412: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudnn.so.8'; dlerror: libcudnn.so.8: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /ssoft/spack/arvine/v1/opt/spack/linux-rhel7-cascadelake/gcc-9.3.0/cuda-11.0.2-w4gi7m3vx64dpvuur2c6als7534h3z5v/lib64:/ssoft/spack/arvine/v1/opt/spack/linux-rhel7-haswell/gcc-4.8.5/gcc-9.3.0-prviuv7vpdzyyhhai7sqrxlgyedsjosg/lib64:/ssoft/spack/arvine/v1/opt/spack/linux-rhel7-haswell/gcc-4.8.5/gcc-9.3.0-prviuv7vpdzyyhhai7sqrxlgyedsjosg/lib
+2021-08-27 11:24:28.177202: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1835] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2021-08-27 11:25:07.185995: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+homooligomer: '2'
+total_length: '1364'
+working_directory: 'prediction_test_14a37'
+running mmseqs2
+  0%|          | 0/150 [elapsed: 00:00 remaining: ?]
+18621 Sequences Found in Total
+  0%|          | 0/5 [elapsed: 00:00 remaining: ?]
+whhhaaa... too many sequences (37202) subsampling to 21994
+model_1_ptm_seed_0 recycles:3 tol:5.88 pLDDT:80.19 pTMscore:0.45
+whhhaaa... too many sequences (37202) subsampling to 21994
+model_2_ptm_seed_0 recycles:3 tol:5.10 pLDDT:81.07 pTMscore:0.46
+whhhaaa... too many sequences (37202) subsampling to 21994
+model_3_ptm_seed_0 recycles:3 tol:7.60 pLDDT:81.30 pTMscore:0.44
+whhhaaa... too many sequences (37202) subsampling to 21994
+model_4_ptm_seed_0 recycles:3 tol:12.38 pLDDT:76.69 pTMscore:0.47
+whhhaaa... too many sequences (37202) subsampling to 21994
+model_5_ptm_seed_0 recycles:3 tol:1.94 pLDDT:78.71 pTMscore:0.46
+model rank based on pLDDT
+rank_1_model_3_ptm_seed_0 pLDDT:81.30
+rank_2_model_2_ptm_seed_0 pLDDT:81.07
+rank_3_model_1_ptm_seed_0 pLDDT:80.19
+rank_4_model_5_ptm_seed_0 pLDDT:78.71
+rank_5_model_4_ptm_seed_0 pLDDT:76.69
+predicted alignment error
+predicted contacts
+predicted distogram
+predicted LDDT
+Traceback (most recent call last):
+  File "/work/updalpe/abriata/af2/pilJ-homodimer/AlphaFold2_advanced.py", line 1008, in <module>
+    get_ipython().system('zip -FSr {output_dir}.zip {output_dir}')
+NameError: name 'get_ipython' is not defined
