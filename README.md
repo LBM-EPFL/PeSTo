@@ -84,3 +84,4 @@ This work is licensed under a
 [cc-by-nc-sa-shield]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg
 
 ## Reference
+Krapp, L. F., Abriata, L. A., Rodriguez, F. C. & Peraro, M. D. *PeSTo: parameter-free geometric deep learning for accurate prediction of protein interacting interfaces*. 2022.05.09.491165 Preprint at https://doi.org/10.1101/2022.05.09.491165 (2022).
