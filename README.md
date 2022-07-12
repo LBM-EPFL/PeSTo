@@ -56,7 +56,7 @@ The `model` folder contains the scripts to train the model as well as the select
 
 Scripts and functions to perform predictions and analysis on MD are found in the `md_analysis` folder. Molecular dynamics are loaded using [MDTraj](https://www.mdtraj.org/). An utility tool called `data_manager` was developed to easily locate simulations within a defined tree-folder structure. We also developed analysis tools based on MDTraj (`mdtraj_utils`).
 
-### Interfacome
+### Interfaceome
 
 The `interfaceome` folder contains the Jupyter notebooks and python scripts used to download, process and analyse the data. All the AlphaFold-predicted structures used can be downloaded freely from the [AlphaFold Protein Structure Database](https://alphafold.ebi.ac.uk/). Only the corresponding [UniProt](https://www.uniprot.org/) data is downloaded ([interfaceome/download_uniprot.py](interfaceome/download_uniprot.py)). We also download the PAE from the AlphaFold Protein Structure Database ([interfaceome/download_af_pae.py](interfaceome/download_af_pae.py)).
 
