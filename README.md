@@ -72,7 +72,7 @@ We provide 4 variants of the trained PeSTo models:
 
 It is possible to use PeSTo without requiring the user to install it using our web server freely available at [pesto.epfl.ch](https://pesto.epfl.ch/). PDB ID, UniProt ID or PDB files are accepted. The predictions are fast and can be visualized directely in the browser or downloaded as PDB files.
 
-## License
+## License
 
 This work is licensed under a
 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
