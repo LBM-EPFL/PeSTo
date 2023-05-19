@@ -1,0 +1,11 @@
+79588eeee4ec9bac817c1aaba41ae979  2CUA_A_i2.pdb
+79588eeee4ec9bac817c1aaba41ae979  df468b_interface_ion.pdb
+87f3b70f718df9a057aee1167816bee1  2CUA_A_i3.pdb
+87f3b70f718df9a057aee1167816bee1  df468b_interface_ligand.pdb
+9d8afafb234f84960981205a119ea2ef  2CUA_A_i4.pdb
+9d8afafb234f84960981205a119ea2ef  df468b_interface_lipid.pdb
+c23a2fee40a5b6d798af732c6124d1a7  2CUA_A_i0.pdb
+c23a2fee40a5b6d798af732c6124d1a7  2CUA_A.pdb
+c23a2fee40a5b6d798af732c6124d1a7  df468b_interface_protein.pdb
+d1d27de39a58290eb43a5e16fdf405fc  2CUA_A_i1.pdb
+d1d27de39a58290eb43a5e16fdf405fc  df468b_interface_dna-rna.pdb

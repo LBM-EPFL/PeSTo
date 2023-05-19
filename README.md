@@ -18,7 +18,7 @@ conda env create -f pesto.yml
 conda activate pesto
 ```
 
-Almost all examples and code to reproduce the results are available as 
+Almost all examples and code to reproduce the results are available as
 [Jupyter](https://jupyter.org/) notebooks. Start a JupyterLab session with:
 ```
 jupyter-lab
@@ -48,7 +48,7 @@ We provide all the Jupyter notebooks and scripts used to obtain and process the 
 
 ### Interfaces prediction
 
-All bioassemblies used are [downloaded](data/rsyncPDB.sh) from [RCSB PDB](https://www.rcsb.org/). The subunits are split into training, testing and validation dataset according to 30% sequence similarity clusters ([processing/split_dataset.ipynb](processing/split_dataset.ipynb)). Finaly, we preprocess the structure, detect the interfaces within complexes and store the features and labels into an optimized HDF5 format ([processing/build_dataset.py](processing/build_dataset.py)). 
+All bioassemblies used are [downloaded](data/rsyncPDB.sh) from [RCSB PDB](https://www.rcsb.org/). The subunits are split into training, testing and validation dataset according to 30% sequence similarity clusters ([processing/split_dataset.ipynb](processing/split_dataset.ipynb)). Finaly, we preprocess the structure, detect the interfaces within complexes and store the features and labels into an optimized HDF5 format ([processing/build_dataset.py](processing/build_dataset.py)).
 
 The `model` folder contains the scripts to train the model as well as the selected pre-trained models in `model/save`. The benchmark and comparison can be reproduced with the `interface_*.ipynb` notebooks.
 
@@ -84,4 +84,4 @@ This work is licensed under a
 [cc-by-nc-sa-shield]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg
 
 ## Reference
-Krapp, L. F., Abriata, L. A., Rodriguez, F. C. & Peraro, M. D. *PeSTo: parameter-free geometric deep learning for accurate prediction of protein interacting interfaces*. 2022.05.09.491165 Preprint at https://doi.org/10.1101/2022.05.09.491165 (2022).
+Krapp, L.F., Abriata, L.A., Cortés Rodriguez, F. et al. PeSTo: parameter-free geometric deep learning for accurate prediction of protein binding interfaces. Nat Commun 14, 2175 (2023). https://doi.org/10.1038/s41467-023-37701-8

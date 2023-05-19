@@ -115,7 +115,7 @@ def save_pdb(subunits, filepath):
                 c = cn.split(':')[0][0]
 
                 # format pdb line
-                pdb_line = "{:<6s}{:>5d} {:<4s} {:>3s} {:1s}{:>4d}    {:8.3f}{:8.3f}{:8.3f}{:6.2f}{:6.2f}          {:<2s}  ".format(h, i+1, n, rn, c, ri, xyz[0], xyz[1], xyz[2], 0.0, bf, e)
+                pdb_line = "{:<6s}{:>5d} {:<4s} {:>3s} {:1s}{:>4d}    {:8.3f}{:8.3f}{:8.3f}{:6.2f}{:6.2f}          {:<2s}  ".format(h, i+1, n, rn, c, ri, xyz[0], xyz[1], xyz[2], bf, bf, e)
 
                 # write to file
                 fs.write(pdb_line+'\n')
