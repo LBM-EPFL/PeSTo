@@ -1,6 +1,6 @@
 ![pesto summary](img/pesto_summary.png)
 
-# PeSTo: parameter-free geometric deep learning for accurate prediction of protein interfaces with small- and macro-molecules
+# PeSTo: parameter-free geometric deep learning for accurate prediction of protein binding interfaces
 
 PeSTo (Protein Structure Transformer) is a parameter-free geometric deep learning method to predict protein interaction interfaces from a protein structure. It is available for free without registration as an online tool ([pesto.epfl.ch](https://pesto.epfl.ch/)).
 
