@@ -103,9 +103,9 @@ def tag_hetatm_chains(structure):
 
     # update chain name
     cids_hetatm = np.array([f"{cid}:{hid}" for cid, hid in zip(structure['chain_name'][m_hetatm], delta_hetatm)])
-    cids = structure['chain_name'].copy().astype(np.object)
+    cids = structure['chain_name'].copy().astype(np.dtype('<U10'))
     cids[m_hetatm] = cids_hetatm
-    structure['chain_name'] = cids.astype(str)
+    structure['chain_name'] = np.array(list(cids)).astype(str)
 
     return structure
 
