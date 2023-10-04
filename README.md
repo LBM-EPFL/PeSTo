@@ -11,22 +11,39 @@ git clone https://github.com/LBM-EPFL/PeSTo.git
 cd PeSTo
 ```
 
-The primary requirements for PeSTo are [GEMMI](https://gemmi.readthedocs.io/en/latest/) to parse PDB files and [PyTorch](https://pytorch.org/) for the deep learning framework. During training, [h5py](https://www.h5py.org/) is used to store the processed data in an optimized format. The predicted interfaces can be visualized using [PyMOL](https://pymol.org/2/) or [ChimeraX](https://www.cgl.ucsf.edu/chimerax/). All the specific dependencies are listed in [pesto.yml](pesto.yml). The specific dependencies can be easily installed using [Anaconda](https://www.anaconda.com/). Create and activate the environement with:
+The primary requirements for PeSTo are [GEMMI](https://gemmi.readthedocs.io/en/latest/) to parse PDB files and [PyTorch](https://pytorch.org/) for the deep learning framework. During training, [h5py](https://www.h5py.org/) is used to store the processed data in an optimized format. The predicted interfaces can be visualized using [PyMOL](https://pymol.org/2/) or [ChimeraX](https://www.cgl.ucsf.edu/chimerax/).
+
+### Using Anaconda
+All the specific dependencies are listed in [pesto.yml](pesto.yml). The specific dependencies can be easily installed using [Anaconda](https://www.anaconda.com/). Create and activate the environement with:
 
 ```
 conda env create -f pesto.yml
 conda activate pesto
 ```
 
-Almost all examples and code to reproduce the results are available as
-[Jupyter](https://jupyter.org/) notebooks. Start a JupyterLab session with:
+Or installing manually de dependencies
+
 ```
-jupyter-lab
+conda create -n pesto python=3.9
+conda activate pesto
+conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
+conda install numpy scipy pandas matplotlib scikit-learn h5py tqdm
+conda install gemmi tensorboard -c conda-forge
+```
+
+### Using virtualenv
+Alternatively, it is possible to create a local environment using [virtualenv](https://virtualenv.pypa.io/en/latest/) and install all the dependencies.
+```
+virtualenv pesto
+source pesto/bin/activate
+pip install -r requirements.txt
 ```
 
 ## Application
-
-A set a Jupyter notebooks and python scripts are available to apply our trained model.
+A set a [Jupyter](https://jupyter.org/) notebooks and python scripts are available to apply our trained model. Start a JupyterLab session with:
+```
+jupyter-lab
+```
 
 ### Interfaces predictions
 

@@ -1,0 +1,11 @@
+torch
+tensorboard
+gemmi
+h5py
+numpy
+scipy
+pandas
+matplotlib
+scikit-learn
+tqdm
+jupyterlab
